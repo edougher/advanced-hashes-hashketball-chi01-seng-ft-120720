@@ -162,6 +162,6 @@ team_colors("Brooklyn Nets")
 def team_names
   game_hash.each do |team, team_data|
     binding.pry
-    return team_data[:team_name]
+    return team_data[:team_color]
 end
 end

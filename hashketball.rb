@@ -148,3 +148,9 @@ game_hash.each do |team, team_data|
 end
 name = "Jeff Adrien"
 shoe_size(name)
+
+def team_colors(team)
+game_hash.each do |team_name|
+  if team_name[:team_name] == team
+     return team_name[:colors]
+end

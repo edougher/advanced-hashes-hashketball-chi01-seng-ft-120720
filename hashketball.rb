@@ -153,5 +153,7 @@ def team_colors(team)
 game_hash.each do |team_name|
   if team_name[:team_name] == team
      return team_name[:colors]
+   end
+ end
 end
 team_colors("Brooklyn Nets")

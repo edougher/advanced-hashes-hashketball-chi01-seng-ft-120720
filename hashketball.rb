@@ -149,11 +149,10 @@ end
 name = "Jeff Adrien"
 shoe_size(name)
 
-def team_colors(team)
-game_hash.each do |team1|
-  if team1[:team_name] == team
-     return team_name[:colors]
-   end
- end
+def team_colors(team_one)
+game_hash.each do |team, team_data|
+if team_data == team_one
+  return team_data[:colors]
+end
 end
 team_colors("Brooklyn Nets")

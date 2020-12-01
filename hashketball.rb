@@ -151,9 +151,7 @@ shoe_size(name)
 
 def team_colors(team_one)
 game_hash.each do |team, team_data|
-if team_data == team_one
-  return team_data[:colors]
-end
+binding.pry
 end
 end
 team_colors("Brooklyn Nets")
